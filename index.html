@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DPlayer with DASH</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
 </head>
@@ -9,13 +11,15 @@
     <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
     <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
     <script>
+        // 初始化 DPlayer
         const dp = new DPlayer({
             container: document.getElementById('dplayer'),
             video: {
-                url: 'https://raw.githubusercontent.com/Rogetta/wp/main/playlist.mpd', // 替换为实际的 MPD 文件 URL
+                url: 'https://raw.githubusercontent.com/Rogetta/wp/main/playlist.mpd', // 确保 MPD 文件 URL 正确
                 type: 'dash'
             }
         });
     </script>
 </body>
 </html>
+
